@@ -1,5 +1,4 @@
-bin = node_modules/.bin
-
 .PHONY: build
 build:
-	@$(bin)/tsc ./src/* --outDir dist
+	@mkdir -p dist
+	@bun build src/index.ts --target=node --outfile=dist/index.js
