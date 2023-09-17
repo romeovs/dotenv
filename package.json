@@ -1,7 +1,6 @@
 {
 	"name": "@romeovs/dotenv",
 	"module": "index.js",
-	"type": "module",
 	"devDependencies": {
 		"@types/node": "^20.6.2",
 		"prettier": "^3.0.3",
