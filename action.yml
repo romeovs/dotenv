@@ -1,0 +1,14 @@
+name: Read .env file
+description: Read .env file and set variables as output
+author: Romeo Van Snick
+inputs:
+  filename:
+    required: false
+    default: .env
+    description: The file to read the env variables from.
+runs:
+  using: node20
+  main: dist/index.js
+branding:
+  icon: settings
+  color: blue
