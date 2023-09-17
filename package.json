@@ -1,0 +1,9 @@
+{
+	"name": "@romeovs/dotenv",
+	"module": "index.js",
+	"type": "module",
+	"devDependencies": {
+		"bun-types": "latest",
+		"typescript": "^5.0.0"
+	}
+}
