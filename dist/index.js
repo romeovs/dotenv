@@ -55,6 +55,7 @@ function main() {
                     env = dotenv.parse(content);
                     for (key in env) {
                         value = env[key];
+                        core.info("Loaded variable ".concat(key));
                         core.setSecret(value);
                         core.setOutput(key, value);
                     }

@@ -14,6 +14,7 @@ async function main() {
 
 	for (const key in env) {
 		const value = env[key]
+		core.info(`Loaded variable ${key}`)
 		core.setSecret(value)
 		core.setOutput(key, value)
 	}
