@@ -4,7 +4,7 @@ import * as path from "path"
 import { promises as fs } from "fs"
 
 async function main() {
-	const file = core.getInput("file") ?? ".env"
+	const file = core.getInput("file") || ".env"
 
 	const pathname = path.resolve(file)
 	core.info(`Loading env from ${pathname}`)

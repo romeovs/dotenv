@@ -41,18 +41,17 @@ var dotenv = require("dotenv");
 var path = require("path");
 var fs_1 = require("fs");
 function main() {
-    var _a;
     return __awaiter(this, void 0, void 0, function () {
         var file, pathname, content, env, key, value;
-        return __generator(this, function (_b) {
-            switch (_b.label) {
+        return __generator(this, function (_a) {
+            switch (_a.label) {
                 case 0:
-                    file = (_a = core.getInput("file")) !== null && _a !== void 0 ? _a : ".env";
+                    file = core.getInput("file") || ".env";
                     pathname = path.resolve(file);
                     core.info("Loading env from ".concat(pathname));
                     return [4 /*yield*/, fs_1.promises.readFile(pathname, "utf-8")];
                 case 1:
-                    content = _b.sent();
+                    content = _a.sent();
                     env = dotenv.parse(content);
                     for (key in env) {
                         value = env[key];
