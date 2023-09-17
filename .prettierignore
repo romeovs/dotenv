@@ -1,0 +1,6 @@
+.next/
+.cache/
+.vercel/
+dist/
+pnpm-lock.*
+*.lockb
